@@ -1,19 +1,17 @@
- class patern
-  {
-    public static void main(String args[])
+ class Numberpetern
+{
+    public static void main(String args[]) 
     {
-        int r, c, k;
-        for (r = 1; r <= 5; r++) 
+        int n = 5; 
+
+        for (int i = 1; i <= n; i++)
         {
-            for (k = r; k <= 4; k++)
+            for (int j = 1; j <= i; j++) 
             {
-                System.out.print(" ");
+                System.out.print(j);
             }
-            for (c = 1; c <= r; c++)
-            {
-                System.out.print("1", c);
-            }
-            System.out.println(); 
+            System.out.println();
         }
     }
 }
+
