@@ -1,5 +1,5 @@
  
- class Metabolism1
+ class Book
  {
     
     private int book_id;
