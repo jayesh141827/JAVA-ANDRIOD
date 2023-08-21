@@ -1,38 +1,58 @@
- public class Book {
-    // Data members
+ 
+ class Metabolism1
+ {
+    
     private int book_id;
     private String title;
     private String author;
 
-    // Default constructor
-    public Book() {
+   
+    public Book() 
+    {
         book_id = 0;
-        title = "Unknown";
-        author = "Unknown";
+        title = "";
+        author = "";
     }
 
-    // Parameterized constructor
-    public Book(int book_id, String title, String author) {
+  
+     Book(int book_id, String title, String author) 
+    {
         this.book_id = book_id;
         this.title = title;
         this.author = author;
     }
 
-    // Main method to test the class
-    public static void main(String[] args) {
-        // Creating objects using both constructors
+    
+     int getBookId() 
+    {
+        return book_id;
+    }
+
+    String getTitle() 
+    {
+        return title;
+    }
+
+     String getAuthor() 
+    {
+        return author;
+    }
+
+    public static void main(String args[]) 
+    {
+        
         Book defaultBook = new Book();
-        Book parameterizedBook = new Book(1, "Java Programming", "John Doe");
+        Book parameterizedBook= new Book(420, "ONE DAY INJOY OF LIFE", "jayesh parmar");
 
-        // Displaying book details
-        System.out.println("Default Book Details:");
-        System.out.println("Book ID: " + defaultBook.book_id);
-        System.out.println("Title: " + defaultBook.title);
-        System.out.println("Author: " + defaultBook.author);
+        
+        System.out.println("Default Book:");
+        System.out.println("Book ID: " + defaultBook.getBookId());
+        System.out.println("Title: " + defaultBook.getTitle());
+        System.out.println("Author: " + defaultBook.getAuthor());
 
-        System.out.println("\nParameterized Book Details:");
-        System.out.println("Book ID: " + parameterizedBook.book_id);
-        System.out.println("Title: " + parameterizedBook.title);
-        System.out.println("Author: " + parameterizedBook.author);
+        System.out.println("\nParameterized Book:");
+        System.out.println("Book ID: " + parameterizedBook.getBookId());
+        System.out.println("Title: " + parameterizedBook.getTitle());
+        System.out.println("Author: " + parameterizedBook.getAuthor());
     }
 }
