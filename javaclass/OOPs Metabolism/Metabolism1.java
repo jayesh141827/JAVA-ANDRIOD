@@ -1,58 +1,33 @@
- 
- class Book
- {
-    
-    private int book_id;
-    private String title;
-    private String author;
 
-   
-    public Book() 
+class Book 
+{
+     // Main method to test the Book class
+    static void main(String args[]) 
     {
-        book_id = 0;
-        title = "";
-        author = "";
-    }
+    // Data members
+          int book_id;
+          String title;
+          String author;
 
-  
-     Book(int book_id, String title, String author) 
-    {
+    // Constructor
+    Book(int book_id, String title, String author) {
         this.book_id = book_id;
         this.title = title;
         this.author = author;
     }
+      // Creating an instance of Book
+        Book book1 = new Book(420, "one day ", "F. Scott Fitzgerald");
 
-    
-     int getBookId() 
+        // Displaying book information
+        book1.displayInfo();
+
+        // Method to display book information
+    void displayInfo() 
     {
-        return book_id;
+        System.out.println("Book ID: " + book_id);
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
     }
 
-    String getTitle() 
-    {
-        return title;
-    }
-
-     String getAuthor() 
-    {
-        return author;
-    }
-
-    public static void main(String args[]) 
-    {
-        
-        Book defaultBook = new Book();
-        Book parameterizedBook= new Book(420, "ONE DAY INJOY OF LIFE", "jayesh parmar");
-
-        
-        System.out.println("Default Book:");
-        System.out.println("Book ID: " + defaultBook.getBookId());
-        System.out.println("Title: " + defaultBook.getTitle());
-        System.out.println("Author: " + defaultBook.getAuthor());
-
-        System.out.println("\nParameterized Book:");
-        System.out.println("Book ID: " + parameterizedBook.getBookId());
-        System.out.println("Title: " + parameterizedBook.getTitle());
-        System.out.println("Author: " + parameterizedBook.getAuthor());
     }
 }
