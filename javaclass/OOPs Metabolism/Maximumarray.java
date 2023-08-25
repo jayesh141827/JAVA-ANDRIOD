@@ -1,4 +1,5 @@
- class Maximumarray {
+ class Maximumarray 
+ {
     public static void main(String args[])
     {
         int[] arr = {10,50,400,660,28,19,60,58};
@@ -20,7 +21,7 @@
        System.out.println("minimum value: "+minimum);
      }
      
-}
+ }
 class array{
     private int number;
 
