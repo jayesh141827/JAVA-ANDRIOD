@@ -42,4 +42,4 @@ public class DayorWeek{
 
         System.out.println("The day of the week is: " + dayName);
     }
-}
+};
