@@ -16,28 +16,28 @@ public class DayorWeek{
         switch (day){
             case 1:
                 System.out.println(dayName ="Monday");
-                break;
+                
             case 2:
                 System.out.println(dayName = "Tuesday");
-                break;
+            
             case 3:
                 System.out.println(dayName = "Wednesday");
-                break;
+                
             case 4:
                 System.out.println(dayName = "Thursday");
-                break;
+                
             case 5:
                 System.out.println(dayName = "Friday");
-                break;
+                
             case 6:
                 System.out.println(dayName = "Saturday");
-                break;
+                
             case 7:
                 System.out.println(dayName = "Sunday");
-                break;
+                
             default:
                 System.out.println(dayName = "Invalid day");
-                break;
+                
         }
 
         System.out.println("The day of the week is: " + dayName);
