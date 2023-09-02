@@ -1,4 +1,4 @@
-class Starpattern 
+public class Starpattern 
 {
     public static void main(String args[]) 
     {
@@ -8,13 +8,13 @@ class Starpattern
         {
             for (int j = 1; j <= n - i; j++) 
             {
-                System.out.print(" ");
+                System.out.println(" ");
             }
             for (int k = 1; k <= i; k++) 
             {
-                System.out.print("* ");
+                System.out.println("* ");
             }
             System.out.println();
         }
     }
-}
+};
