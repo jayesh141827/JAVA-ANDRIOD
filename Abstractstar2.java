@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Abstract2 {
+public class Abstractstar2 {
     public static void main(String[] args) {
 
         SBI bank = new SBI();
