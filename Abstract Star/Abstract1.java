@@ -15,7 +15,7 @@ public class Abstract1{
 
 }
 
-abssimpal class Shape {
+abstract class Shape {
 
     final float pi = 3.14f;
     int l, w, area;
