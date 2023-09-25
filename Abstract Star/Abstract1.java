@@ -1,53 +1,66 @@
 import java.util.Scanner;
 
-public class Abstract1 {
+public class Abstract1{
+
     public static void main(String[] args) {
-        Rectangele abc = new Rectangele(){
-            abc.read();
-            abc.show();
-            cicle cicle = new cicle();
-            c.read();
-            c.show();
-        
+
+        Rectangle a = new Rectangle();
+        a.read();
+        a.show();
+
+        Circle b = new Circle();
+        b.read();
+        b.show();
     }
+
 }
 
-    abstract class shap {
+abssimpal class Shape {
 
-        final float pi = 3.14f;
-        int l, b, area;
-        Scanner scan = new Scanner(System.in);
+    final float pi = 3.14f;
+    int l, w, area;
+    float r, Total;
+    Scanner scanner = new Scanner(System.in);
 
-        abstract void read();
+    abstract void read();
 
-        abstract void show();
-    }
-
-    class Rectangele extends shap {
-
-        void read() {
-            System.out.print("Enter l =");
-            l = scan.nextInt();
-            System.out.print("Enter b =");
-            b = scan.nextInt();
-
-            area = l * b;
-        }
-
-        void show() {
-            System.out.print("area = " + area);
-        }
-    }
-
-class cicle extends shap{
-    float r,total;
-    void read(){
-        System.out.print("Enter r = ");
-        r = scan.nextFloat();
-        total = pi * r * r;
+    abstract void show();
 
 }
- void show(){
-    System.out.println("area = "+ total);
-  }
+
+class Rectangle extends Shape {
+
+    void read() {
+        System.out.print("Enter of Lenght = ");
+        l = scanner.nextInt();
+        System.out.print("Enter of Width = ");
+        w = scanner.nextInt();
+        area = l * w;
+
+    }
+
+    void show() {
+
+        System.out.println("Rectangle Area = " + area);
+
+    }
+
+}
+
+class Circle extends Shape {
+
+    void read() {
+
+        System.out.print("Enter  Circle Radius = ");
+        r = scanner.nextFloat();
+        Total = pi * r * r;
+
+    }
+
+    void show() {
+
+        System.out.println(" Enter Circle of Area = " + Total);
+
+    }
+
 }
