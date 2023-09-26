@@ -15,8 +15,8 @@ abstract class Bank {
     float Amount;
     float PR;
     float Month;
-    float TOtal
-    Interest Rate;
+    float Tatal;
+    float total_I ;
     final float Interest = 7.61f;
     float K;
     float Year;
@@ -24,7 +24,7 @@ abstract class Bank {
 
     abstract public void getRateOfInterest();
 
-    abstract public void setter();
+    abstract public void setter();77&
 
 }
 
@@ -39,7 +39,7 @@ class SBI extends Bank {
         PR = Amount * Interest / 100;
         Month = Amount + PR;
         Year = Month * 12;
-        Total Interest Rate = PR * 12;
+        total_I  = PR * 12;
         K = K * Year;
 
     }
@@ -48,7 +48,7 @@ class SBI extends Bank {
 
         System.out.println("This Month Interest Amount " + Month);
         System.out.println("This year Tnterest Amount " + Year);
-        System.out.println("This year Total Tnterest " + Total Interest Rate);
+        System.out.println("This year Total Tnterest " +  Interest );
 
         System.out.println("--------------");
 
